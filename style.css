@@ -817,3 +817,98 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; }
     filter: drop-shadow(0 0 14px rgba(18,120,200,0.7));
     letter-spacing: 0.06em;
 }
+/* ================= PROJECT GRID STYLE ================= */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:20px;
+}
+
+.project-card{
+    position:relative;
+    background:#112E45;
+    border:1px solid rgba(255,255,255,0.08);
+    padding:22px;
+    border-radius:14px;
+    text-decoration:none;
+
+    /* ✅ FIX: text color yahan set karo */
+    color: #8BB8D4;   /* soft blue (tumhare theme se match) */
+
+    transition:0.4s ease;
+    overflow:hidden;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#0B1E2D;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+.project-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:3px;
+    height:0%;
+    background:#0B1E2D;
+    transition:0.4s ease;
+}
+
+.project-card:hover::before{
+    height:100%;
+}
+
+.project-lang{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#7c9cbf;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.project-title{
+    font-size:20px;
+    margin-bottom:10px;
+    font-family:'Playfair Display', serif;
+
+    /* ✅ FIX */
+    color: #1278C8;
+}
+
+.project-desc{
+    font-size:14px;
+    color:#8BB8D4;   /* muted blue-gray */
+    line-height:1.6;
+}
+
+.project-arrow{
+    position:absolute;
+    right:18px;
+    bottom:18px;
+
+    /* ✅ FIX: visible color */
+    color: #1278C8;
+
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.project-card:hover .project-title{
+    color:#2E6A8E;
+}
+
+.project-card:hover .project-desc{
+    color:#2E6A8E;
+}
+.project-card:hover .project-arrow{
+    opacity: 1;
+    transform: translateX(4px);
+}
+.project-card:hover .project-arrow{
+    opacity: 1;
+    color: #E8F3FB;
+}
