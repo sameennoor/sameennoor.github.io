@@ -38,20 +38,20 @@
     <!-- ================= NAVBAR ================= -->
     <header>
         <nav class="navbar">
-            <div class="logo">Portfolio</div>
+            <div class="logo">SN</div>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-btn">Home</a></li>
                 <li><a href="#about" class="nav-btn">About</a></li>
+                <li><a href="#education" class="nav-btn">Education</a></li>
                 <li><a href="#skills" class="nav-btn">Skills</a></li>
-                <li><a href="#projects" class="nav-btn">Showcase</a></li>
+                <li><a href="#projects" class="nav-btn">Projects</a></li>
                 <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
             <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
 
-    <!-- ================= HOME ================= -->
-    <section id="home" class="home">
+    <!-- ================= About ================= -->
+    <section id="about" class="">
         <div class="home-content">
             <div class="home-text">
                 <h3>Hello, I'm</h3>
@@ -68,9 +68,8 @@ emerging technologies and innovative AI solutions.</p>
                     <a href="mailto:sameennoor376@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
                 <div class="btn-group">
-                    <a href="resume/resume.pdf" target="_blank" class="btn">➡ View My Resume</a>
-                    <!-- Download Resume button -->
-                    <a href="resume/resume.pdf" download="Sameen_Noor_Resume.pdf" class="btn btn-outline">⬇ Download CV</a>
+                    <a href="resume/sameen_resume.pdf" target="_blank" class="btn">➡ View My Resume</a>
+                    
                 </div>
             </div>
             <div class="home-image">
@@ -79,9 +78,9 @@ emerging technologies and innovative AI solutions.</p>
         </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
+    <!-- ================= Education ================= -->
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
         <div class="education-container">
             <div class="edu-card">
                 <img src="images/school.jpg" alt="School">
@@ -248,105 +247,118 @@ emerging technologies and innovative AI solutions.</p>
         </div>
     </section>
 
-    <!-- ================= SHOWCASE ================= -->
-    <section id="showcase" class="showcase">
-        <h2 class="section-title">Project Showcase</h2>
-        <div class="showcase-buttons">
-            <button class="show-btn active-btn" onclick="showProjects()">Projects</button>
-            <button class="show-btn" onclick="showCertificates()">Certificates</button>
-        </div>
+  <!-- ================= PROJECTS ================= -->
+<section id="projects" class="projects">
 
-        <!-- ================= PROJECTS ================= -->
-        <div id="projects-section" class="content-box active-content">
-            <div class="project-container">
-                <!-- PROJECT 1 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
-                    <div class="project-content">
-                        <h3>E-Learning Management System</h3>
-                        <p>A web-based E-Learning platform developed using HTML, CSS, PHP, and MySQL. 
-                        The system allows student registration, course enrollment, quiz assessments, 
-                        and instructor course management with a secure and user-friendly interface.</p>
-                        <p><strong>Technologies:</strong> HTML, CSS, PHP, MySQL, XAMPP</p>
-                        <a href="https://github.com/sameennoor/E-Learning-Management-System" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 2 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1200&auto=format&fit=crop">
-                    <div class="project-content">
-                        <h3>AI Based Language Translator</h3>
-                        <p>A Python desktop application that performs real-time speech translation using 
-                        speech recognition, AI translation, and text-to-speech technologies for seamless communication.</p>
-                        <p><strong>Technologies:</strong> Python, Tkinter, SpeechRecognition, GoogleTrans, gTTS</p>
-                        <a href="https://github.com/sameennoor/Lanaguage-Translator" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 3 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
-                    <div class="project-content">
-                        <h3>Stack-Based Text Editor</h3>
-                        <p>A console-based text editor developed in C language featuring insert, delete, 
-                        replace, undo, and redo operations using stacks and linked lists for efficient text management.</p>
-                        <p><strong>Technologies:</strong> C Language, Stacks, Linked Lists, File Handling</p>
-                        <a href="https://github.com/sameennoor/Stack-Based-Text-Editor" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 4 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop">
-                    <div class="project-content">
-                        <h3>E-Hospital Management System</h3>
-                        <p>A DBMS-based hospital management system developed to automate hospital operations 
-                        including patient records, doctor management, appointments, and billing with secure database integration.</p>
-                        <p><strong>Technologies:</strong> Java Swing, Oracle SQL, JDBC</p>
-                        <a href="https://github.com/sameennoor/E-Hospital-Management-System" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 5 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop">
-                    <div class="project-content">
-                        <h3>Bank Management System</h3>
-                        <p>A console-based banking application developed in C language that automates 
-                        account creation, deposits, withdrawals, transfers, and account management operations.</p>
-                        <p><strong>Technologies:</strong> C Language, File Handling, Functions, Conditional Statements</p>
-                        <a href="https://github.com/sameennoor/Bank-Management-System" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 6 -->
-                <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdogzO64JnljbmdKjHYfUZTAZmBj9sxP8sw&s">
-                    <div class="project-content">
-                        <h3>Workflow Automation Using Apache Airflow</h3>
-                        <p>An automated ETL workflow orchestration project using Apache Airflow and Docker to process, transform, and manage academic and employee datasets through scalable pipeline automation.</p>
-                        <p><strong>Technologies:</strong> Apache Airflow, Python, SQL, Docker</p>
-                        <a href="https://github.com/sameennoor/Workflow-Automation-Using-Apache-Airflow-" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 7 -->
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1557404763-69708cd8b9ce?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <div class="project-content">
-                        <h3>Verilog Traffic Light Controller</h3>
-                        <p>A Verilog-based Traffic Light Controller using FSM concepts for traffic management and pedestrian crossing with timer-based signal control and simulation testing.</p>
-                        <p><strong>Technologies:</strong> Verilog HDL, Digital Logic Design, FPGA Simulation, ModelSim</p>
-                        <a href="https://github.com/sameennoor/Verilog-Traffic-Light-Controller" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-                <!-- PROJECT 8 -->
-                <div class="project-card">
-                    <img src="https://imageio.forbes.com/specials-images/imageserve/6556736bb4dd56e90351d079/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
-                    <div class="project-content">
-                        <h3>Ai Healthcare Ethics Survey</h3>
-                        <p>A research-based project exploring ethical challenges, transparency, patient safety, and responsible adoption of AI technologies in healthcare systems.</p>
-                        <!-- <p><strong>Technologies:</strong> Verilog HDL, Digital Logic Design, FPGA Simulation, ModelSim</p> -->
-                        <a href="https://github.com/sameennoor/Ai-Healthcare-Ethics-Survey" target="_blank" class="btn">GitHub Link</a>
-                    </div>
-                </div>
-            </div>
+    <h2 class="section-title">Project Showcase</h2>
+
+    <div class="showcase-buttons">
+        <button class="show-btn" onclick="showProjects()">Featured Work</button>
+        <button class="show-btn" onclick="showCertificates()">Certificates</button>
+    </div>
+
+    <!-- ================= PROJECTS ================= -->
+    <div id="projects-section" class="content-box active-content">
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <a class="project-card" href="https://github.com/sameennoor/E-Learning-Management-System" target="_blank">
+                <p class="project-lang">Web · PHP</p>
+                <h3 class="project-title">E-Learning Management System</h3>
+                <p class="project-desc">Web-based learning platform with student registration, course enrollment, quizzes and admin panel.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 2 -->
+            <a class="project-card" href="https://github.com/sameennoor/Lanaguage-Translator" target="_blank">
+                <p class="project-lang">AI · Python</p>
+                <h3 class="project-title">AI Language Translator</h3>
+                <p class="project-desc">Real-time speech translation using speech recognition and AI based translation system.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 3 -->
+            <a class="project-card" href="https://github.com/sameennoor/Stack-Based-Text-Editor" target="_blank">
+                <p class="project-lang">C · DS</p>
+                <h3 class="project-title">Stack Based Text Editor</h3>
+                <p class="project-desc">Text editor using stacks and linked lists with undo/redo functionality.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 4 -->
+            <a class="project-card" href="https://github.com/sameennoor/E-Hospital-Management-System" target="_blank">
+                <p class="project-lang">Java · DBMS</p>
+                <h3 class="project-title">E-Hospital Management System</h3>
+                <p class="project-desc">Hospital system for managing patients, doctors, appointments and records.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 5 -->
+            <a class="project-card" href="https://github.com/sameennoor/Assembly-Password-Verification-System" target="_blank">
+                <p class="project-lang">Assembly · Embedded Systems</p>
+                <h3 class="project-title">Password Verification System</h3>
+                <p class="project-desc">Assembly-based password verification system using EMU8086 with Arduino for LED feedback.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 6 -->
+            <a class="project-card" href="https://github.com/sameennoor/Workflow-Automation-Using-Apache-Airflow-" target="_blank">
+                <p class="project-lang">Data · Automation</p>
+                <h3 class="project-title">Apache Airflow Workflow</h3>
+                <p class="project-desc">ETL automation pipeline using Apache Airflow and Docker for data workflows.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 7 -->
+            <a class="project-card" href="https://github.com/sameennoor/Verilog-Traffic-Light-Controller" target="_blank">
+                <p class="project-lang">Verilog · FPGA</p>
+                <h3 class="project-title">Traffic Light Controller FSM</h3>
+                <p class="project-desc">FSM based traffic control system designed in Verilog for digital systems.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 8 -->
+            <a class="project-card" href="https://github.com/sameennoor/AWGN-Based-Wireless-Modulation-Simulation" target="_blank">
+                <p class="project-lang">Wireless Communications · Simulation</p>
+                <h3 class="project-title">AWGN-Based Wireless Modulation Simulation</h3>
+                <p class="project-desc">Python simulation of modulation techniques over AWGN channel.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 9 -->
+            <a class="project-card" href="https://github.com/sameennoor/Ai-Healthcare-Ethics-Survey" target="_blank">
+                <p class="project-lang">AI · Research</p>
+                <h3 class="project-title">AI Healthcare Ethics Survey</h3>
+                <p class="project-desc">Research on AI ethics, transparency, safety and healthcare impacts.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 10 -->
+            <a class="project-card" href="https://github.com/sameennoor/ESP32-WiFi-Servo-Control-IoT" target="_blank">
+                <p class="project-lang">IoT · Embedded Systems</p>
+                <h3 class="project-title">ESP32 Wi-Fi Controlled Servo Motor</h3>
+                <p class="project-desc">ESP32-based IoT system controlling servo motor (0°–180°) via Wi-Fi.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 11 -->
+            <a class="project-card" href="https://github.com/sameennoor/Linux-Network-Services-Deployment" target="_blank">
+                <p class="project-lang">Linux · Networking</p>
+                <h3 class="project-title">Linux Network Services Deployment</h3>
+                <p class="project-desc">Setup of Linux network services in Ubuntu using VirtualBox.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <!-- PROJECT 12 -->
+            <a class="project-card" href="https://github.com/sameennoor/BookHive-React-Native-App" target="_blank">
+                <p class="project-lang">React Native · Mobile App</p>
+                <h3 class="project-title">BookHive — Library Management App</h3>
+                <p class="project-desc">Mobile app for managing books, members, issues, and returns.</p>
+                <span class="project-arrow">↗</span>
+            </a>
+
         </div>
+    </div>
 
         <!-- ================= CERTIFICATES ================= -->
         <div id="certificates-section" class="content-box">
